@@ -21,8 +21,8 @@ const FilterComponent = observer(() => {
   };
 
   return (
-    <div className="w-80 border-r border-gray-200 h-screen p-6 flex flex-col bg-[#F8F9FB]">
-      <div className="flex items-center gap-3 mb-10">
+    <div className="w-85 border-r border-gray-200 h-screen p-6 flex flex-col bg-[#F8F9FB]">
+      <div className="items-center gap-3 mb-10">
         <div className="w-8 h-8 rounded-full border border-blue-200 flex items-center justify-center bg-blue-50">
           <div className="w-4 h-4 bg-blue-600 rounded-full flex items-center justify-center">
             <div className="w-1.5 h-1.5 bg-white rounded-full"></div>

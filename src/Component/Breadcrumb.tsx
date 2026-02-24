@@ -17,12 +17,14 @@ const Breadcrumb = observer(() => {
 
   return (
     <>
-      <nav className="breadcrumb px-8 py-5 flex items-center gap-3 text-[11px] font-bold tracking-wider">
+      <nav className="border-b border-gray-200 px-8 py-5 items-center gap-3 text-[11px] font-bold tracking-wide">
         <span className="text-gray-400">Indonesia</span>
 
         {store.getSelectedProvince && (
           <>
-            <span className="text-gray-300 font-light">›</span>
+            <span className="text-gray-300 font-light m-1">
+              <i className="fa-solid fa-chevron-right text-[9px] text-gray-300"></i>
+            </span>
             <span
               className={
                 isLast("province") ? "text-blue-600" : "text-gray-400"
@@ -34,7 +36,9 @@ const Breadcrumb = observer(() => {
 
         {store.getSelectedCity && (
           <>
-            <span className="text-gray-300 font-light">›</span>
+            <span className="text-gray-300 font-light m-1">
+              <i className="fa-solid fa-chevron-right text-[9px] text-gray-300"></i>
+            </span>
             <span
               className={isLast("city") ? "text-blue-600" : "text-gray-400"}>
               {getName(store.getListCity, store.getSelectedCity)}
@@ -44,7 +48,9 @@ const Breadcrumb = observer(() => {
 
         {store.getSelectedDistrict && (
           <>
-            <span className="text-gray-300 font-light">›</span>
+            <span className="text-gray-300 font-light m-1">
+              <i className="fa-solid fa-chevron-right text-[9px] text-gray-300"></i>
+            </span>
             <span className="text-blue-600">
               {getName(store.getListDistrict, store.getSelectedDistrict)}
             </span>

@@ -3,7 +3,7 @@ import ResultComponent from "../Component/RegionContent";
 
 const FilterPage = () => {
   return (
-    <div className="flex h-screen w-full overflow-hidden bg-white">
+    <div className="flex h-screen w-screen overflow-hidden bg-white">
       <FilterComponent />
       <ResultComponent />
     </div>
