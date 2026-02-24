@@ -14,32 +14,32 @@ const ResultComponent = observer(() => {
       <div className="flex-1 overflow-y-auto flex flex-col items-center justify-center p-10 bg-[#F8F9FB]">
         <div className="text-center w-full">
           <section>
-            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-2">
+            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-1">
               Provinsi
             </p>
-            <h3 className="text-4xl md:text-6xl font-black text-[#1e293b]">
+            <h3 className="text-3xl md:text-5xl font-black text-[#1e293b]">
               {getName(store.getListProvince, store.getSelectedProvince)}
             </h3>
           </section>
-          <div className="my-8 text-gray-200 text-2xl font-light">
+          <div className="my-3 text-gray-200 text-2xl font-light">
             <i className="fa-solid fa-chevron-down text-gray-400 text-[12px]"></i>
           </div>
           <section>
-            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-2">
+            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-1">
               Kota / Kabupaten
             </p>
-            <h3 className="text-4xl md:text-6xl font-black text-[#1e293b]">
+            <h3 className="text-3xl md:text-5xl font-black text-[#1e293b]">
               {getName(store.getListCity, store.getSelectedCity)}
             </h3>
           </section>
-          <div className="my-8 text-gray-200 text-2xl font-light">
+          <div className="my-3 text-gray-200 text-2xl font-light">
             <i className="fa-solid fa-chevron-down text-gray-400 text-[12px]"></i>
           </div>
           <section>
-            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-2">
+            <p className="text-[10px] font-bold text-blue-400 uppercase tracking-[0.4em] mb-1">
               Kecamatan
             </p>
-            <h3 className="text-4xl md:text-6xl font-black text-[#1e293b]">
+            <h3 className="text-3xl md:text-5xl font-black text-[#1e293b]">
               {getName(store.getListDistrict, store.getSelectedDistrict)}
             </h3>
           </section>

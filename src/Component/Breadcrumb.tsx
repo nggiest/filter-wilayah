@@ -17,9 +17,8 @@ const Breadcrumb = observer(() => {
 
   return (
     <>
-      <nav className="border-b border-gray-200 px-8 py-5 items-center gap-3 text-[11px] font-bold tracking-wide">
+      <nav className="border-b border-gray-200 px-8 py-5 items-center text-[11px] font-bold tracking-wide">
         <span className="text-gray-400">Indonesia</span>
-
         {store.getSelectedProvince && (
           <>
             <span className="text-gray-300 font-light m-1">
