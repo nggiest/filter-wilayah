@@ -1,6 +1,6 @@
 import { observer } from "mobx-react-lite";
 import { FilterProvinceSetting } from "../store/FilterProvince";
-import Breadcrumb from "./Breadcrumb"; // Import breadcrumb yang tadi kita buat
+import Breadcrumb from "./Breadcrumb";
 
 const ResultComponent = observer(() => {
   const store = FilterProvinceSetting;

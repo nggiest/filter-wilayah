@@ -33,8 +33,8 @@ class FilterProvinceStore {
   }
   setSelectedProvince(id: number | undefined) {
     this.selectedProvince = id;
-    this.selectedCity = undefined; // Reset anak
-    this.selectedDistrict = undefined; // Reset cucu
+    this.selectedCity = undefined;
+    this.selectedDistrict = undefined;
 
     if (id) {
       localStorage.setItem("province", id.toString());
